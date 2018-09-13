@@ -170,13 +170,77 @@ ul {
 }
 
 .underline {
-    // TODO: green underline
+    // TODO: underline
+    position: relative;
 
-    &-half
+    &-big
     {
-        // TODO: вариативность размеров
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+        @include media-breakpoint-up(md)
+        {
+            padding-bottom: 50px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &-small
+    {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        @include media-breakpoint-up(md)
+        {
+            padding-bottom: 40px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &:after
+    {
+        content:'';
+        position: absolute;
+        display: block;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 15%;
+        height:5px;
+        margin: 0 auto;
+
+        @include media-breakpoint-up(md)
+        {
+            height: 9px;
+        }
+    }
+
+    &-bgcolor
+    {
+        &-white
+        {
+            :after
+            {
+                background-color: $white;
+            }
+
+        }
+        &-main1
+        {
+            &:after
+            {
+                background-color: $main1_color;
+            }
+
+        }
+        &-main2
+        {
+            &:after
+            {
+                background-color: $main2_color;
+            }
+        }
     }
 }
+
 
 ul {
     margin-bottom: 0;
@@ -252,17 +316,6 @@ button.gradient {
 .posa {
     position: absolute;
 }
-
-
-.basic_color {
-    color: $main1_color;
-}
-.content_color {
-    color: $content_color;
-}
-.gray_color {
-    color: $gray_text_color;
-}
 .img-responsive {
     display: block;
     max-width: 100%;
@@ -275,20 +328,11 @@ button.gradient {
 .fwb {
     font-weight: 700;
 }
-.red {
-    color: red;
-}
 .spy {
     display: none;
 }
 .tdu {
     text-decoration: underline;
-}
-.black {
-    font-weight: 900;
-}
-.semibold {
-    font-weight: 600;
 }
 .ttu {
     text-transform: uppercase;
@@ -304,9 +348,6 @@ button.gradient {
     }
 }
 
-.white {
-    color: #fff;
-}
 .hover-tdn {
     &:hover {
         text-decoration: none;
@@ -379,8 +420,5 @@ button:hover{
     background: rgba(0,0,0,0.2);
 }
 
-.notfound
-{
-    margin-top: 5%;
-    margin-bottom: 10%;
-}
+
+
