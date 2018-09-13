@@ -1,0 +1,67 @@
+.top_banners{
+	background-color: #fff;
+	img{
+		max-width: auto;
+	}
+	.list{
+		.banner_block{
+			position: relative;
+			overflow: hidden;
+			height: 236px;
+			.description{
+				position: absolute;
+				top: 30px;
+				.title{
+					font-weight: 700;
+					font-size: 18px;
+				}
+				.text{
+					color: $main1_color;
+					font-size: 18px;
+				}
+				.button{
+					padding: 6px 25px;
+					width: 180px;
+					margin-left: auto;
+					margin-right: auto;
+					position: absolute;
+					position: absolute;
+				    bottom: -70px;
+				    left: calc(50% - 90px);
+				}
+			}
+		}
+		.item{
+			.item-text{
+				background-color: transparent;
+			}
+			.wrap{
+				min-height: 236px;
+			}
+			.img_2{
+				background: url(../img/video_2.jpg) 0 0 no-repeat;
+				background-size: cover;
+			}
+		}
+	} 
+}
+
+@media (min-width: 768px) { 
+	.top_banners{
+		background-color: #efefef;
+		.list{
+			.banner_block{
+				.description{
+					text-align: right;
+					.title{
+						font-size: 25px;
+					}
+					.button{
+						margin-right: 0;
+						position: static;
+					}
+				}
+			}
+		} 
+	}
+}

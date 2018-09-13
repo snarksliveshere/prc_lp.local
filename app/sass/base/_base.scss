@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 14px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.5;
+    font-family: $default-font;
+    overflow-x: hidden;
+    color: $content_color;
+    @include media-breakpoint-up(md) {
+        font-size: 18px;
+    }
+}
+
+a {
+    color: $main1_color;
+}
+
+input, textarea, button {
+    background: #fff;
+    border: none;
+    outline: none;
+    &:focus:required:invalid {
+        border-color: red;
+    }
+    &:required:valid {
+        border-color: green;
+    }
+
+}
+
+::placeholder {
+    font-weight: 400;
+    color: $form_gray_color;
+}
+
+.form {
+
+    input {
+        font-weight: 400;
+        color: $form_gray_color;
+        &:hover {
+            color: $form_gray_color;
+        }
+
+    }
+
+}
+
+/* FONTS */
+
+.font
+{
+    &-bold
+    {
+        font-weight: 700;
+    }
+    &-semibold
+    {
+        font-weight: 600;
+    }
+    &-medium
+    {
+        font-weight: 500;
+    }
+    &-regular
+    {
+        font-weight: 400;
+    }
+    &-light
+    {
+        font-weight: 300;
+    }
+
+    &-text
+    {
+        &_14
+        {
+            font-size: 14px;
+        }
+    }
+    &-head
+    {
+        // TODO: посмотреть на наличии схожих
+        &_27
+        {
+            font-size: 25px;
+            @include media-breakpoint-up(md)
+            {
+                font-size: 27px;
+            }
+        }
+    }
+}
+
+/* COLORS */
+
+.color
+{
+    &_black
+    {
+        color: #000;
+    }
+    &_white
+    {
+        color: #fff;
+    }
+    &_content
+    {
+        color: $content_color;
+    }
+
+    &_main1
+    {
+        color: $main1_color;
+        &-pale
+        {
+            color: $main1_pale_color;
+        }
+    }
+
+    &_main2
+    {
+        color: $main2_color;
+        &-pale
+        {
+            color: $main2_pale_color;
+        }
+    }
+
+    &_bg
+    {
+        &-main1
+        {
+            background-color: $main1_color;
+            &-pale
+            {
+                background-color: $main1_pale_color;
+            }
+        }
+
+        &-main2
+        {
+            background-color: $main2_color;
+            &-pale
+            {
+                background-color: $main2_pale_color;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+/node_modules
+/.idea/
+/build/img/
+/build/*.html
+/build/css/main.css
+/build/css/bootstrap-4.0.0.min-old.css
+/build/catalog.html
+/bash.exe.stackdump

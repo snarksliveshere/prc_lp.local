@@ -1,0 +1,190 @@
+// Gradients
+%text_gradient {
+    background: linear-gradient(135deg, #2f80ed 0%,#00a9f5 100%);
+    background: linear-gradient(135deg,rgba(255,255,255,0.7),rgba(255,255,255,0));
+    color: $main1_color;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 2px;
+    right: 0;
+    content: '';
+    display: block;
+}
+%button_gradient {
+    background: $main1_color;
+    background: linear-gradient(135deg, $main1_color 0%,#00a9f5 100%);
+    border: none;
+    color: #fff;
+}
+%menu_gradient {
+    background: $another_blue;
+    background: linear-gradient(135deg, $another_blue 0%,$main1_color 100%);
+}
+%left_menu_gradient {
+    @include media-breakpoint-up(md) {
+        background: $main1_color;
+        background: linear-gradient(to right, $main1_color 1%, $border-color-blue 100%);
+    }
+}
+%clip_gradient {
+    background: linear-gradient(45deg, $another_blue 33%, $main1_color 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: $another_blue;
+}
+@mixin border_gradient($side:'',$first-color:$main1_color,$second-color:$border-color-blue,$b-width:2,$direction:to right) {
+    border#{$side}:#{$b-width}px solid $first-color;
+    border-image: linear-gradient($direction, $first-color 1%, $second-color 100%);
+    border-image-slice: 1;
+}
+// Shadows
+%button_shadow {
+    box-shadow: 0 10px 61px 0 rgba(47,128,237,0.3);
+}
+%block_shadow {
+    box-shadow: 2px 4px 59px 3px rgba(46,124,230,0.2);
+}
+%another_shadow {
+    box-shadow: inset -1px 18px 18px -8px rgba(46,124,230,0.2);
+}
+//BUTTONS
+%button_border {
+    border-radius: 8px;
+}
+%button_padding {
+    padding: 10px 25px;
+}
+@mixin button($b_color:$main1_color,$bg:#ffffff,$fz:18px,$fw:700) {
+    @extend %button_padding;
+    @extend %button_border;
+    text-align: center;
+    color: $b_color;
+    font-size: $fz;
+    font-weight:$fw;
+    background-color: $bg;
+    box-sizing: border-box;
+    position: relative;
+    &:hover
+    {
+        text-decoration: none;
+        color: $b_color;
+        cursor: pointer;
+    }
+
+}
+
+@mixin button_after {
+    &:before {
+        content:'';
+        position: absolute;
+        z-index: -1;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        top: -2px;
+        left: -2px;
+        display: block;
+        @extend %button_gradient;
+        @extend %button_border;
+    }
+}
+%complex_white_button {
+    @extend %button_padding;
+    @extend %button_border;
+    text-align: center;
+    color: $main1_color;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    position: relative;
+    &:before {
+        content:'';
+        position: absolute;
+        z-index: -1;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        top: -2px;
+        left: -2px;
+        display: block;
+        @extend %button_gradient;
+        @extend %button_border;
+    }
+    &:after
+    {
+        @extend %text_gradient;
+    }
+    &:hover
+    {
+        text-decoration: none;
+        cursor: pointer;
+        @extend %button_gradient;
+        &:after
+        {
+            display: none;
+        }
+    }
+    &.mini
+    {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
+%complex_blue_button {
+    @extend %button_padding;
+    @extend %button_border;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    box-sizing: border-box;
+    position: relative;
+    padding:12px 25px;
+    top: -2px;
+    @extend %button_gradient;
+    &:hover
+    {
+        top: 0;
+        //@extend %button_padding;
+        text-decoration: none;
+        cursor: pointer;
+        &:before {
+            content:'';
+            position: absolute;
+            z-index: -1;
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            top: -2px;
+            left: -2px;
+            display: block;
+            @extend %button_gradient;
+            @extend %button_border;
+        }
+        &:after
+        {
+            @extend %text_gradient;
+        }
+        background: #ffffff;
+        color: $main1_color;
+    }
+    &.mini
+    {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
+//end of buttons
+
+%right-2-center {
+    text-align: center;
+    @include media-breakpoint-up(md)
+    {
+        text-align: right;
+    }
+}
+
+
+
+
+
+
+

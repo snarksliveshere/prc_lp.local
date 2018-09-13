@@ -1,0 +1,49 @@
+.recommended_products{
+	@include media-breakpoint-up(md)
+	{
+		margin-bottom: 70px;
+	}
+	.item{
+		img{
+			@extend %black_shadow;
+			max-width: 100%;
+			display: inline-block;
+		}
+	}
+	.title{
+		position: relative;
+		line-height: 1;
+		font-weight: 700;
+		font-size: 18px;
+	}
+
+	.btn_more{
+		@extend %white_shadow;
+		text-decoration: none;
+		background-color: transparent;
+		border: 2px solid #fff;
+		display: block;
+		width: 170px;
+		height: 40px;
+		line-height: 36px;
+		border-radius: 5px;
+		box-sizing: border-box;
+		color: #fff;
+		font-weight: 700;
+		font-size: 18px;
+		&:hover{
+			background: #fff;
+			text-decoration: none;
+			color: $blue_color;
+		}
+	}
+	.more a{
+		font-size: 16px;
+		color: #fff;
+		border-bottom: 1px solid #fff;
+		&:hover{
+			text-decoration: none;
+			border: none;
+		}
+	}
+}

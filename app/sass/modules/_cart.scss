@@ -1,0 +1,48 @@
+//header__basket
+.shopping
+{
+    &__cart
+    {
+        display: none;
+        position: absolute;
+        background: #ffffff;
+        width: 300px;
+        right: 0;
+        top: 60px;
+        z-index: 2;
+        &:after
+        {
+            @include triangle_up(2,#fff,-30,15,15);
+            left:auto;
+            right: 7px;
+        }
+        &-char
+        {
+            font-weight: 400;
+        }
+    }
+}
+.cart
+{
+    .item
+    {
+        border-bottom:1px solid #ccc;
+        @include media-breakpoint-up(md)
+        {
+            border:1px solid #ccc;
+        }
+    }
+    &__cost {
+        @include media-breakpoint-up(md)
+        {
+            border-left:1px solid #ccc;
+        }
+        &-num
+        {
+            @include media-breakpoint-up(md)
+            {
+                border-bottom:1px solid #ccc;
+            }
+        }
+    }
+}

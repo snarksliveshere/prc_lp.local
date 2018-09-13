@@ -1,0 +1,42 @@
+$default-font: "Manrope", sans-serif;
+$open_sans: "Open Sans", sans-serif;
+$raleway: "Raleway", sans-serif;
+$accent: orange;
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+
+$gutter: $grid-gutter-width;
+
+
+// colors
+// RES: 2 основных цвета и их вариации. На данный момент салатовый и малиновый
+// Пусть они будут салатовый main1_color малиновый main2_color & вариации соответсвенно, main1_pale, main_1_dark etc
+$content_color: #2b2b2b;
+
+$main1_color: #a4c369;
+$main1_pale_color: #e4edd2;
+$main2_color: #cd5d5d;
+$main2_pale_color: #f0cece;
+
+
+// TODO: Эти на потом
+$blue_color: #2e7ce6;
+$gray_color: #ebebeb;
+$gray_text_color: #a7a7a7;
+$form_gray_color: #939393;
+$table_gray_color: #f9f9f9;
+$pale_blue_color: #cceefd;
+$another_blue: #00a9f5;
+$border-color-blue: #12a9f4;
+$border-gray-color: #e1e1e1;
+
+
+
+$images : '../img/';
+
+
