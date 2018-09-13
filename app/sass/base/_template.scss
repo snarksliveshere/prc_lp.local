@@ -170,7 +170,6 @@ ul {
 }
 
 .underline {
-    // TODO: underline
     position: relative;
 
     &-big
@@ -266,51 +265,30 @@ i {
 
 .button
 {
-    @include button;
-    &-white
-    {
-        @include button;
-    }
-    &-blue
-    {
-        @include button($main1_color, #fff);
-    }
-    &-shadow
-    {
-        @extend %button_shadow;
-    }
-    &-after
-    {
-        @include button_after;
-    }
-    &.gradient
-    {
-        @extend %button_gradient;
-        &:hover
-        {
-            color: inherit;
-        }
-    }
-}
+  @extend %button;
 
-button.gradient {
-    @extend %button_gradient;
-}
-.hover-gradient {
+  &-main1
+  {
+    background-color: $main1_color;
+
     &:hover
     {
-        @extend %button_gradient;
-        color: #fff;
+      background-color: $main1_dark_color;
+      color: $white;
     }
-}
+  }
 
-.block-shadow {
-    @extend %block_shadow;
-}
-.black_shadow {
-    @extend %black_shadow;
-}
+  &-main2
+  {
+    background-color: $main2_color;
 
+    &:hover
+    {
+      background-color: $main2_light_color;
+      color: $white;
+    }
+  }
+}
 
 
 .posa {
@@ -336,9 +314,6 @@ button.gradient {
 }
 .ttu {
     text-transform: uppercase;
-}
-.border_gradient {
-    @include border_gradient;
 }
 .another_blue {
     color: $another_blue;
@@ -404,12 +379,7 @@ button:hover{
 .bg-gray-darker {
     @extend %gray_bg-darker;
 }
-.smooth_black_shadow {
-    @extend %smooth_black_shadow;
-}
-.right-2-center {
-    @extend %right-2-center;
-}
+
 .veil {
     position: absolute;
     top: 0;

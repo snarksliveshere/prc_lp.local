@@ -8,7 +8,7 @@
                 border:none;
             }
         }
-        @extend %block_shadow;
+
         @include media-breakpoint-up(md)
         {
             box-shadow: none;
@@ -73,11 +73,6 @@
             }
         }
     }
-    &__top
-    {
-        //border-bottom: 3px solid $blue_color;
-        @include border_gradient($side:-bottom,$first-color:$main1_color,$second-color:$border-color-blue,$b-width:3,$direction:to right)
-    }
     &__disclamer
     {
         font-size: 20px;
@@ -139,7 +134,7 @@
     {
         position: relative;
         &-button {
-            @extend %block_shadow;
+
             display: inline-block;
             padding: 5px 10px;
             border-radius: 5px;

@@ -50,7 +50,14 @@ body {
 }
 
 a {
-    color: $main1_color;
+    color: $content_color;
+
+    &:hover
+    {
+        text-decoration: none;
+        color: $content_color
+    }
+
 }
 
 input, textarea, button {
