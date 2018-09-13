@@ -137,62 +137,7 @@ input, textarea, button {
     }
 }
 
-/* COLORS */
 
-.color
-{
-    &_black
-    {
-        color: #000;
-    }
-    &_white
-    {
-        color: #fff;
-    }
-    &_content
-    {
-        color: $content_color;
-    }
-
-    &_main1
-    {
-        color: $main1_color;
-        &-pale
-        {
-            color: $main1_pale_color;
-        }
-    }
-
-    &_main2
-    {
-        color: $main2_color;
-        &-pale
-        {
-            color: $main2_pale_color;
-        }
-    }
-
-    &_bg
-    {
-        &-main1
-        {
-            background-color: $main1_color;
-            &-pale
-            {
-                background-color: $main1_pale_color;
-            }
-        }
-
-        &-main2
-        {
-            background-color: $main2_color;
-            &-pale
-            {
-                background-color: $main2_pale_color;
-            }
-        }
-    }
-}
 
 
 
