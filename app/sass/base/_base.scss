@@ -115,6 +115,10 @@ input, textarea, button {
     {
         font-weight: 300;
     }
+    &-italic
+    {
+        font-style: italic;
+    }
 
     &-text
     {
@@ -137,6 +141,21 @@ input, textarea, button {
     }
 }
 
+.line-height
+{
+    &__equal
+    {
+        line-height: 1;
+    }
+    &__decimal
+    {
+        line-height: 1.1;
+    }
+    &_quorter
+    {
+        line-height: 1.25;
+    }
+}
 
 
 

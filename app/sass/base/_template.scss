@@ -260,7 +260,7 @@ ul {
 
 
 i {
-    color: $another_blue;
+
 }
 
 .button
@@ -402,6 +402,13 @@ button:hover{
     {
         color: #fff;
     }
+    &_gray
+    {
+        &-pale
+        {
+            color: $gray_pale;
+        }
+    }
     &_content
     {
         color: $content_color;
@@ -446,4 +453,83 @@ button:hover{
         }
     }
 }
+
+.flip_horizontal {
+    transform: scale(-1,1);
+}
+
+.radius
+{
+    &__circle
+    {
+       &-top
+       {
+           &-left
+           {
+               border-top-left-radius: 50%;
+           }
+           &-right
+           {
+               border-top-right-radius: 50%
+           }
+       }
+        &-bottom
+        {
+            &-left
+            {
+                border-bottom-left-radius: 50%;
+            }
+            &-right
+            {
+                border-bottom-right-radius: 50%;
+            }
+        }
+    }
+    &__num100
+    {
+        &-top
+        {
+            &-left
+            {
+                border-top-left-radius: 100px;
+            }
+            &-right
+            {
+                border-top-right-radius: 100px;
+            }
+        }
+        &-bottom
+        {
+            &-left
+            {
+                border-bottom-left-radius: 100px;
+            }
+            &-right
+            {
+                border-bottom-right-radius: 100px;
+            }
+        }
+    }
+}
+
+.width
+{
+    &__50
+    {
+        width: 50%;
+    }
+}
+
+.p
+{
+
+    &l
+    {
+        &-100
+        {
+            padding-left: 100px;
+        }
+    }
+}
+
 

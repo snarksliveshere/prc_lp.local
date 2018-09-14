@@ -1,0 +1,37 @@
+.testimonials
+{
+    &__item
+    {
+        margin-bottom: 60px;
+
+        &-img
+        {
+            z-index: 2;
+            position: relative;
+        }
+
+        .fa-quote-left, .fa-quote-right
+        {
+            font-size: 100px;
+        }
+        .fa-quote-right
+        {
+            top:-40px;
+            right: 0;
+            z-index: 1;
+            &.toleft
+            {
+                left: 5%;
+                right: auto;
+            }
+        }
+        .fa-quote-left
+        {
+            bottom: -40px;
+            right: 0;
+            z-index: 1;
+        }
+
+
+    }
+}
