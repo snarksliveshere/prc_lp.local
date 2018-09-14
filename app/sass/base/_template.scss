@@ -441,6 +441,11 @@ button:hover{
             {
                 background-color: $main1_pale_color;
             }
+            &-dark
+            {
+                background-color: $main1_dark_color;
+            }
+
         }
 
         &-main2
@@ -450,7 +455,64 @@ button:hover{
             {
                 background-color: $main2_pale_color;
             }
+            &-dark
+            {
+                background-color: $main2_dark_color;
+            }
         }
+    }
+    &_fish
+    {
+        color: $color_fish;
+        &-bg
+        {
+            background-color: $color_fish;
+        }
+    }
+    &_milk
+    {
+        color: $color_milk;
+        &-bg
+        {
+            background-color: $color_milk;
+        }
+    }
+    &_cow
+    {
+        color: $color_cow;
+        &-bg
+        {
+            background-color: $color_cow;
+        }
+    }
+    &_pig
+    {
+        color: $color_pig;
+        &-bg
+        {
+            background-color: $color_pig;
+        }
+    }
+    &_grain
+    {
+        color: $color_grain;
+        &-bg
+        {
+            background-color: $color_grain;
+        }
+    }
+    &_veg
+    {
+        color: $color_veg;
+        &-bg
+        {
+            background-color: $color_veg;
+        }
+    }
+    &_fowl
+    {
+        color: $color_fowl;
+        background-color: $color_fowl;
     }
 }
 
