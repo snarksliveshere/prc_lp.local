@@ -99,4 +99,90 @@
         }
 
     }
+    &__bg
+    {
+        [data-bg=fish]
+        {
+            background-image: url(#{$images}bg/bg_fish.jpg);
+        }
+        [data-bg=milk]
+        {
+            background-image: url(#{$images}bg/bg_milk.jpg);
+        }
+        [data-bg=cow]
+        {
+            background-image: url(#{$images}bg/bg_cow.jpg);
+        }
+        [data-bg=fowl]
+        {
+            background-image: url(#{$images}bg/bg_fowl.jpg);
+        }
+        [data-bg=pig]
+        {
+            background-image: url(#{$images}bg/bg_pig.jpg);
+        }
+        [data-bg=grain]
+        {
+            background-image: url(#{$images}bg/bg_grain.jpg);
+        }
+        [data-bg=veg]
+        {
+            background-image: url(#{$images}bg/bg_veg.jpg);
+        }
+        &-item
+        {
+            height: 183px;
+            background-repeat: no-repeat;
+            background-position: bottom left;
+
+
+            &.bg
+            {
+                &-fish
+                {
+                    background: url(#{$images}bg/bg_fish.jpg);
+                }
+                &-milk
+                {
+                    background: url(#{$images}bg/bg_milk.jpg);
+                }
+                &-cow
+                {
+                    background: url(#{$images}bg/bg_cow.jpg);
+                }
+                &-fowl
+                {
+                    background: url(#{$images}bg/bg_fowl.jpg);
+                }
+                &-pig
+                {
+                    background: url(#{$images}bg/bg_pig.jpg);
+                }
+                &-grain
+                {
+                    background: url(#{$images}bg/bg_grain.jpg);
+                }
+                &-veg
+                {
+                    background: url(#{$images}bg/bg_veg.jpg);
+                }
+            }
+        }
+        &-head
+        {
+            position: absolute;
+            bottom:35px;
+            left:50px;
+
+            & > span
+            {
+                display: none;
+                &.active
+                {
+                    display: block;
+                }
+            }
+        }
+    }
 }
+
