@@ -216,7 +216,7 @@ ul {
     {
         &-white
         {
-            :after
+            &:after
             {
                 background-color: $white;
             }
@@ -475,6 +475,10 @@ button:hover{
                 background-color: $main2_dark_color;
             }
         }
+        &-white
+        {
+            background-color: $white;
+        }
     }
     &_fish
     {
@@ -611,5 +615,13 @@ button:hover{
         }
     }
 }
+
+.big_text_shadow {
+    @extend %big_text_shadow;
+
+}
+
+
+
 
 

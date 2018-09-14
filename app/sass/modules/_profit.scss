@@ -1,0 +1,38 @@
+.profit
+{
+    background: url(#{$images}bg/bg_profit.jpg) 0 0 no-repeat;
+    &__item
+    {
+        &-num
+        {
+            font-size: 80px;
+            @include media-breakpoint-up(md)
+            {
+                font-size: 120px;
+            }
+        }
+        &.main
+        {
+            .profit__item-intro
+            {
+                font-size: 16px;
+
+                @include media-breakpoint-up(md)
+                {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        &-intro
+        {
+            font-size: 12px;
+
+            @include media-breakpoint-up(md)
+            {
+                font-size: 18px;
+            }
+        }
+
+    }
+}
