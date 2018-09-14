@@ -1,0 +1,9 @@
+.world
+{
+    background: url(#{$images}map.jpg) 0 0 no-repeat;
+
+    &__footer
+    {
+        padding-top: 750px;
+    }
+}
