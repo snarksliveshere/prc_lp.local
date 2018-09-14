@@ -1,0 +1,102 @@
+.review
+{
+    &__item
+    {
+       .label_decor
+        {
+            font-size: 11px;
+            border-radius:10px;
+           top: -2px;
+        }
+        &-inner
+        {
+            border-radius: 50%;
+            img
+            {
+                margin: 0 auto;
+            }
+            &:hover
+            {
+                cursor: pointer;
+            }
+
+        }
+    }
+    .item-fish
+    {
+        .review__item-inner
+        {
+            &:hover, &.active
+            {
+                background-color: $color_fish;
+            }
+        }
+
+    }
+    .item-milk
+    {
+        .review__item-inner
+        {
+            &:hover, &.active
+            {
+                background-color: $color_milk;
+            }
+        }
+
+    }
+    .item-cow
+    {
+        .review__item-inner
+        {
+            &:hover, &.active
+            {
+                background-color: $color_cow;
+            }
+        }
+
+    }
+    .item-fowl
+    {
+        .review__item-inner
+        {
+            &:hover, &.active
+            {
+                background-color: $color_fowl;
+            }
+        }
+
+    }
+    .item-pig
+    {
+        .review__item-inner
+        {
+            &:hover, &.active
+            {
+                background-color: $color_pig;
+            }
+        }
+
+    }
+    .item-grain
+    {
+        .review__item-inner
+        {
+            &:hover, &.active
+            {
+                background-color: $color_grain;
+            }
+        }
+
+    }
+    .item-veg
+    {
+        .review__item-inner
+        {
+            &:hover, &.active
+            {
+                background-color: $color_veg;
+            }
+        }
+
+    }
+}

@@ -408,6 +408,21 @@ button:hover{
         {
             color: $gray_pale;
         }
+        &-light
+        {
+            color: $gray-light;
+        }
+        &-bg
+        {
+            &-pale
+            {
+                background-color: $gray_pale;
+            }
+            &-light
+            {
+                background-color: $gray-light;
+            }
+        }
     }
     &_content
     {
@@ -512,7 +527,10 @@ button:hover{
     &_fowl
     {
         color: $color_fowl;
-        background-color: $color_fowl;
+        &-bg
+        {
+            background-color: $color_fowl;
+        }
     }
 }
 
