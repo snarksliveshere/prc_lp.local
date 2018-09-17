@@ -1,0 +1,25 @@
+.header__rollup
+{
+    background-color: $white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    top: -76px;
+    &-phone
+    {
+        a
+        {
+            color: $content_color;
+            font-size: 25px;
+        };
+    }
+    &-buttons
+    {
+        a
+        {
+            width: 100%;
+            border-radius:25px;
+        }
+    }
+}
