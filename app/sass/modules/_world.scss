@@ -1,9 +1,40 @@
 .world
 {
-    background: url(#{$images}map.jpg) 0 0 no-repeat;
+
+    background: url(#{$images}bg/bg_gray_map.jpg) center center no-repeat;
+
+    @include media-breakpoint-up(md)
+    {
+        background: url(#{$images}bg/bg_map.jpg) center center no-repeat;
+        background-size: contain;
+    }
 
     &__footer
     {
-        padding-top: 750px;
+
+        @include media-breakpoint-up(md)
+        {
+            padding-top: 350px;
+        }
+        @include media-breakpoint-up(lg)
+        {
+            padding-top: 750px;
+        }
+        &-pdf
+        {
+            @include media-breakpoint-down(md)
+            {
+                background-color: rgba(164,195,105, 0.6);
+            }
+        }
+        &-link
+        {
+            text-align: center;
+            @include media-breakpoint-up(md)
+            {
+                text-align: left;
+            }
+        }
+
     }
 }

@@ -4,32 +4,97 @@
     {
         margin-bottom: 60px;
 
+        &.inverse
+        {
+            .fa-quote-right
+            {
+                transform:scale(1,-1);
+                bottom: 80px;
+                right: 20px;
+                left: auto;
+
+                @include media-breakpoint-up(md)
+                {
+                    bottom: auto;
+                    left: 5%;
+                    right: auto;
+                    transform:scale(-1,1);
+                }
+            }
+            .fa-quote-left
+            {
+                transform:scale(1,-1);
+                left: 20px;
+                bottom: -40px;
+                right:auto;
+
+                @include media-breakpoint-up(md)
+                {
+                    transform:scale(-1,1);
+                }
+            }
+        }
+
+        &-text
+        {
+            @include media-breakpoint-down(md)
+            {
+                background-color: $white;
+            }
+        }
+        &-imgblock
+        {
+            @include media-breakpoint-down(md)
+            {
+                background-color: $white;
+            }
+        }
         &-img
         {
             z-index: 2;
             position: relative;
+
         }
 
         .fa-quote-left, .fa-quote-right
         {
-            font-size: 100px;
+            font-size: 50px;
+            @include media-breakpoint-up(md)
+            {
+                font-size: 100px;
+            }
+
         }
         .fa-quote-right
         {
-            top:-40px;
-            right: 0;
+            bottom: -40px;
+            left: 50px;
+            opacity: 0.5;
             z-index: 1;
-            &.toleft
+            @include media-breakpoint-up(md)
             {
-                left: 5%;
-                right: auto;
+                top:-40px;
+                right: 0;
+                left:auto;
+                bottom: auto;
             }
+
+
         }
         .fa-quote-left
         {
-            bottom: -40px;
-            right: 0;
             z-index: 1;
+            opacity: 0.5;
+            bottom: 70px;
+            right: 20px;
+
+            @include media-breakpoint-up(md)
+            {
+                bottom: -40px;
+                right: 0;
+
+            }
+
         }
 
 

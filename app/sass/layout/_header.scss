@@ -90,6 +90,42 @@
             }
         }
     }
+}
 
+// sticky header
+@keyframes fixedpanel {
+    0% {
+        opacity: 0;
+        top: -43px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.fixed_top_panel
+{
+    .header__top {
+        position: fixed;
+        z-index: 120;
+        border-bottom: 1px solid #ccc;
+        -webkit-animation: fixedpanel .8s both;
+        animation: fixedpanel .8s both;
+        width: 100%;
+        background-color: $white;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .header__top-logo{
+        transoform: scale(0.9);
+    }
+    .header__top-contacts{
+        transoform: scale(0.9);
+    }
+    .header__top-disclamer {
+        font-size: 14px;
+    }
 
 }

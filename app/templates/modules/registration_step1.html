@@ -1,4 +1,4 @@
-<div class="registration py-5">
+<div class="registration py-5" id="registration">
     <div class="container">
         <div class="row mb-4">
             <div class="col-12 col-md-1 tac ">
@@ -7,7 +7,7 @@
                 </div>
 
             </div>
-            <div class="col-12 col-md-11 font_form-head color_main1 font-light ttu">
+            <div class="col-12 col-md-11 font_form-head color_main1 font-light ttu registration__form-head mt-2 mt-md-0">
                 Заполните регистрационную форму
             </div>
         </div>
@@ -20,80 +20,80 @@
                     Введите свои личные данные, для создания персонального аккаунта на Prod.Center. Используя логин и пароль, вы сможете управлять аккаунтом с любого устройства.
                 </div>
             </div>
-            <form action="" class="registration__form" method="post">
-                <div class="col-12 col-md-7">
-                    <div class="">
-                        <div class="form-group row">
-                            <label for="colFormLabel_family" class="d-none d-md-block col-md-4 col-form-label">Фамилия</label>
-                            <div class="col-12 col-md-8">
-                                <input type="text" class="form-control" name="family" id="colFormLabel_family" placeholder="Фамилия">
+            <form action="" class="registration__form col-12" method="post">
+                <div class="row">
+                    <div class="col-12 col-md-7">
+                        <div class="">
+                            <div class="form-group row">
+                                <label for="colFormLabel_family" class="d-none d-md-block col-md-4 col-form-label">Фамилия</label>
+                                <div class="col-12 col-md-8">
+                                    <input type="text" class="form-control" name="family" id="colFormLabel_family" placeholder="Фамилия">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="colFormLabel_name" class="d-none d-md-block col-md-4 col-form-label">Имя</label>
-                            <div class="col-12 col-md-8">
-                                <input type="text" class="form-control" id="colFormLabel_name" name="name" placeholder="Имя">
+                            <div class="form-group row">
+                                <label for="colFormLabel_name" class="d-none d-md-block col-md-4 col-form-label">Имя</label>
+                                <div class="col-12 col-md-8">
+                                    <input type="text" class="form-control" id="colFormLabel_name" name="name" placeholder="Имя">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="colFormLabel_secondName" class="d-none d-md-block col-md-4 col-form-label">Отчество</label>
-                            <div class="col-12 col-md-8">
-                                <input type="text" class="form-control" id="colFormLabel_secondName" name="second_name" placeholder="Отчество">
+                            <div class="form-group row">
+                                <label for="colFormLabel_secondName" class="d-none d-md-block col-md-4 col-form-label">Отчество</label>
+                                <div class="col-12 col-md-8">
+                                    <input type="text" class="form-control" id="colFormLabel_secondName" name="second_name" placeholder="Отчество">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="colFormLabel_position" class="d-none d-md-block col-md-4 col-form-label">Должность</label>
-                            <div class="col-12 col-md-8">
-                                <input type="text" class="form-control" id="colFormLabel_position" name="position" placeholder="Должность">
+                            <div class="form-group row">
+                                <label for="colFormLabel_position" class="d-none d-md-block col-md-4 col-form-label">Должность</label>
+                                <div class="col-12 col-md-8">
+                                    <input type="text" class="form-control" id="colFormLabel_position" name="position" placeholder="Должность">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="colFormLabel_phone" class="d-none d-md-block col-md-4 col-form-label">Телефон</label>
-                            <div class="col-12 col-md-8">
-                                <input type="text" class="form-control" id="colFormLabel_phone" name="phone" placeholder="Телефон">
+                            <div class="form-group row">
+                                <label for="colFormLabel_phone" class="d-none d-md-block col-md-4 col-form-label">Телефон</label>
+                                <div class="col-12 col-md-8">
+                                    <input type="text" class="form-control phone" id="colFormLabel_phone" name="phone" placeholder="Телефон">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="colFormLabel_mobilePhone" class="d-none d-md-block col-md-4 col-form-label">Мобильный телефон</label>
-                            <div class="col-12 col-md-8">
-                                <input type="text" class="form-control" id="colFormLabel_mobilePhone" name="mobile_phone" placeholder="Мобильный телефон">
+                            <div class="form-group row">
+                                <label for="colFormLabel_mobilePhone" class="d-none d-md-block col-md-4 col-form-label">Мобильный телефон</label>
+                                <div class="col-12 col-md-8">
+                                    <input type="text" class="form-control phone" id="colFormLabel_mobilePhone" name="mobile_phone" placeholder="Мобильный телефон">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="colFormLabel_confirmation" class="d-none d-md-block col-md-4 col-form-label">Код подтверждения</label>
-                            <div class="col-12 col-md-8">
-                                <input type="text" class="form-control active" id="colFormLabel_confirmation" name="confirmation" placeholder="Код подтверждения">
+                            <div class="form-group row">
+                                <label for="colFormLabel_confirmation" class="d-none d-md-block col-md-4 col-form-label">Код подтверждения</label>
+                                <div class="col-12 col-md-8">
+                                    <input type="text" class="form-control active" id="colFormLabel_confirmation" name="confirmation" placeholder="Код подтверждения">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="colFormLabel_email" class="d-none d-md-block col-md-4 col-form-label">E-mail(login)</label>
-                            <div class="col-12 col-md-8">
-                                <input type="text" class="form-control" id="colFormLabel_email" placeholder="E-mail(login)">
+                            <div class="form-group row">
+                                <label for="colFormLabel_email" class="d-none d-md-block col-md-4 col-form-label">E-mail(login)</label>
+                                <div class="col-12 col-md-8">
+                                    <input type="text" class="form-control" id="colFormLabel_email" placeholder="E-mail(login)">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="colFormLabel_password" class="d-none d-md-block col-md-4 col-form-label">Пароль</label>
-                            <div class="col-12 col-md-8">
-                                <input type="password" class="form-control" id="colFormLabel_password" name="password" placeholder="Пароль">
+                            <div class="form-group row">
+                                <label for="colFormLabel_password" class="d-none d-md-block col-md-4 col-form-label">Пароль</label>
+                                <div class="col-12 col-md-8">
+                                    <input type="password" class="form-control" id="colFormLabel_password" name="password" placeholder="Пароль">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-5">
-                    <div class="row">
-                        <div class="registration__step color_main1 font-bold ttu mb-4 col-12 d-none d-md-flex">
-                            шаг 1/2
-                        </div>
-                        <div class="registration__text col-12 d-none d-md-flex">
-                            Введите свои личные данные, для создания персонального аккаунта на Prod.Center. Используя логин и пароль, вы сможете управлять аккаунтом с любого устройства.
-                        </div>
-                        <!--TODO: кнопку откинуть вниз-->
-                        <div class="col-12 align-self-end">
-                            <button class="button button-main1 button-large" type="submit">Далее</button>
+                    <div class="col-12 col-md-5">
+                        <div class="row">
+                            <div class="registration__step color_main1 font-bold ttu mb-4 col-12 d-none d-md-flex">
+                                шаг 1/2
+                            </div>
+                            <div class="registration__text col-12 d-none d-md-flex">
+                                Введите свои личные данные, для создания персонального аккаунта на Prod.Center. Используя логин и пароль, вы сможете управлять аккаунтом с любого устройства.
+                            </div>
+                            <!--TODO: кнопку откинуть вниз-->
+                            <div class="col-12 align-self-end tac">
+                                <button class="button button-main1 button-large" type="submit">Далее</button>
+                            </div>
                         </div>
                     </div>
-
-
                 </div>
             </form>
         </div>

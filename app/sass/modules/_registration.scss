@@ -2,6 +2,15 @@
 {
     &__form
     {
+        &-head
+        {
+            text-align: center;
+            @include media-breakpoint-up(md)
+            {
+                text-align: left;
+            }
+        }
+        
         input, textarea
         {
             border-radius: 0;

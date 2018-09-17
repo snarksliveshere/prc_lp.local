@@ -357,6 +357,9 @@ i {
 .fz18 {
     font-size: 18px;
 }
+.fz22 {
+    font-size: 22px;
+}
 .fz30 {
     font-size: 30px;
 }
@@ -490,6 +493,10 @@ button:hover{
             {
                 background-color: $main2_dark_color;
             }
+            &-opacity
+            {
+                background-color: rgba(205,93,93,0.8);
+            }
         }
         &-white
         {
@@ -620,17 +627,7 @@ button:hover{
     }
 }
 
-.p
-{
 
-    &l
-    {
-        &-100
-        {
-            padding-left: 100px;
-        }
-    }
-}
 
 .big_text_shadow {
     @extend %big_text_shadow;
