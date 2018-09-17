@@ -150,6 +150,14 @@ input, textarea, button {
                 font-size: 60px;
             }
         }
+        &_30
+        {
+            font-size: 12px;
+            @include media-breakpoint-up(md)
+            {
+                font-size: 30px;
+            }
+        }
 
     }
 }

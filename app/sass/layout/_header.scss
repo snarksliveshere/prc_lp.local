@@ -2,7 +2,51 @@
 {
     &__top
     {
-        background: rgba(179,179,179,0.9);
+        @include media-breakpoint-up(md)
+        {
+            background: rgba(179,179,179,0.9);
+        }
+
+        &-disclamer
+        {
+            font-weight: 300;
+            font-size: 10px;
+            @include media-breakpoint-up(md)
+            {
+                font-weight: 600;
+                font-size: 18px;
+            }
+        }
+
+        &-logo
+        {
+            background-color: $main1_color;
+            @include media-breakpoint-up(md)
+            {
+                background-color: transparent;
+            }
+        }
+        &-contacts
+        {
+            text-align: center;
+            background: rgba(0,0,0,0.4);
+            @include media-breakpoint-up(md)
+            {
+                text-align: left;
+                background-color: transparent;
+
+            }
+            a
+            {
+                color: $white;
+                @include media-breakpoint-up(md)
+                {
+                    color: $content_color;
+                }
+            }
+
+        }
+
     }
     &__banner
     {
@@ -17,11 +61,32 @@
     {
         &-bottom
         {
+
+            margin-top: 130px;
+            margin-bottom: 25px;
+
+            @include media-breakpoint-up(md)
+            {
+                margin-top: 70px;
+                margin-bottom: 100px;
+            }
+
             &-logo
             {
-                transform: rotate(-15deg);
-                right: 0;
-                top: -80px;
+
+                transform: rotate(-10deg) scale(0.65);
+                right:0;
+                left: 0;
+                top:-150px;
+                margin: 0 auto;
+
+                @include media-breakpoint-up(md)
+                {
+                    transform: rotate(-15deg) scale(1);
+                    right: 0;
+                    left: auto;
+                    top: -80px;
+                }
             }
         }
     }

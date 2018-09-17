@@ -50,14 +50,22 @@
 
 .label_decor
 {
-    font-size: 11px;
+    font-size: 9px;
     border-radius:10px;
     top: -2px;
+    @include media-breakpoint-up(md)
+    {
+        font-size: 11px;
+    }
 }
 .main_logo
 {
     display: block;
-    width: 92px;
+    width: 100%;
+    @include media-breakpoint-up(md)
+    {
+        width: 92px;
+    }
 
     img
     {
