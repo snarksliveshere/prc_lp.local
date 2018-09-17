@@ -1,9 +1,6 @@
-<div 
-data-vide-bg="mp4: video/bg_video, poster: img/bg_video"
-data-vide-options="posterType: jpg, loop: true, muted: true, autoplay: true, position: 0% 0%"
-class="header__banner"
->
-    <div class="container">
+<div class="header__banner position-relative">
+    <div class="veil"></div>
+    <div class="container above_veil">
         <div class="row tac">
             <div class="header__banner-description d-none d-md-block underline underline-bgcolor-main1 col-12 underline-big color_white font-medium my-5 d-none d-md-block">
                 Всего в России ~15 000 агрокомпаний,<br>
@@ -11,17 +8,20 @@ class="header__banner"
                 <span class="color_bg-main1-pale px-2">2700</span>  из них работают через Prod.Center
             </div>
             <div class="header__banner-slogan col-12 color_white">
-                <p>Закупай и продавай<br>
+                <p class="font-head_60 ttu">Закупай и продавай<br>
                     агропродукцию</p>
-                <p>
-                    крупным и средним оптом
+                <p class="font-head_27 ttu">
+                    крупным и средним оптом<br>
                     у проверенных контрагентов
                 </p>
 
             </div>
-            <div class="tac col-12">
-                <a href="/" class="button button-main2">Зарегистрироваться
+            <div class="tac col-12 header__banner-bottom position-relative">
+                <a href="/" class="button button-main2 my-5">Зарегистрироваться<br>
                     и начать торги</a>
+                <!--TODO: отступ снизу сделать больше-->
+                <!--TODO: кнопка д.б. более закругленная-->
+                <img class="header__banner-bottom-logo position-absolute" src="/img/logo/logo_header-banner-straight.png" alt="">
             </div>
         </div>
     </div>

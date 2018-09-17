@@ -48,7 +48,22 @@
     text-shadow: 7px 3px 40px rgba(0, 0, 0, 1);
 }
 
+.label_decor
+{
+    font-size: 11px;
+    border-radius:10px;
+    top: -2px;
+}
+.main_logo
+{
+    display: block;
+    width: 92px;
 
+    img
+    {
+        display: inline-block;
+    }
+}
 
 
 

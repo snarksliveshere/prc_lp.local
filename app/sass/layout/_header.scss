@@ -2,7 +2,7 @@
 {
     &__top
     {
-        background: rgba(0,0,0,0.2);
+        background: rgba(179,179,179,0.9);
     }
     &__banner
     {
@@ -12,5 +12,19 @@
 
         }
     }
+
+    &__banner
+    {
+        &-bottom
+        {
+            &-logo
+            {
+                transform: rotate(-15deg);
+                right: 0;
+                top: -80px;
+            }
+        }
+    }
+
 
 }

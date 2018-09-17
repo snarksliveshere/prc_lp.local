@@ -387,7 +387,12 @@ button:hover{
     bottom: 0;
     left: 0;
     z-index: 2;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.4);
+}
+.above_veil
+{
+    z-index: 2;
+    position: relative;
 }
 
 /* COLORS */
