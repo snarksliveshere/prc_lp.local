@@ -1,0 +1,46 @@
+.modal
+{
+    &__form
+    {
+        border-radius:25px;
+        border:1px solid #fffafa;
+
+        &-dropdown
+        {
+            ul
+            {
+                border:1px solid $content_color;
+                transition: 0.7s;
+                background: url(#{$images}icons/tobottom_green_arrow.png) no-repeat 95% 8px;
+
+                &.active
+                {
+                    li
+                    {
+                        display: list-item;
+                    }
+                }
+            }
+            li
+            {
+                padding-right: 50px;
+
+                cursor: pointer;
+
+                display: none;
+                &:first-child
+                {
+                    display: list-item;
+                }
+            }
+            a
+            {
+                display: block;
+                text-align: left;
+
+            }
+        }
+    }
+
+
+}

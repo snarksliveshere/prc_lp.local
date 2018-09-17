@@ -1,0 +1,58 @@
+.registration
+{
+    &__form
+    {
+        input, textarea
+        {
+            border-radius: 0;
+            border-color: $content_color;
+            &:focus, &.active
+            {
+                background-color: $form-gray_color;
+                border-color: $content_color;
+                box-shadow: none;
+
+            }
+
+            &.error
+            {
+                background-color: $main2_dark_color;
+            }
+        }
+        .form-group
+        {
+            label
+            {
+                @include media-breakpoint-up(md)
+                {
+                    text-align: right;
+                }
+            }
+        }
+        &-checkbox
+        {
+            label
+            {
+                font-size: 12px;
+
+                @include media-breakpoint-up(md)
+                {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    &__step
+    {
+        border-bottom:1px solid $main1_color;
+    }
+}
+// переопределяю чекбоксы
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+
+    background-color: $main1_color;
+}
+.custom-control-input:checked~.custom-control-label::before {
+
+    background-color: $main1_color;
+}

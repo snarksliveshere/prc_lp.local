@@ -16,6 +16,12 @@ $(document).ready(function () {
             // TODO: здесь возможно пойдет аякс, поэтому мне return false уже не нужен
             return false;
         })
+        $('.registration__form input, .registration__form textarea').attr('placeholder', '');
+
     } // end of Resize > 768
+
+    $('.modal__form-dropdown li').click(function () {
+        $(this).parent().toggleClass('active');
+    });
 
 });
