@@ -435,6 +435,10 @@ button:hover{
         {
             color: $gray-light;
         }
+        &-text
+        {
+            color: $gray_text_color;
+        }
         &-bg
         {
             &-pale
