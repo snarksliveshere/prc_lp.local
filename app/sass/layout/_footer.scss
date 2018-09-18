@@ -40,7 +40,7 @@
         }
         &-logo
         {
-            @include media-breakpoint-down(md)
+            @include media-breakpoint-down(sm)
             {
                 background-color: rgba(205,93,93,0.8);
             }
