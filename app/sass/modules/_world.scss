@@ -22,7 +22,15 @@
         }
         &-pdf
         {
-            @include media-breakpoint-down(md)
+            a
+            {
+                &:hover
+                {
+                    color: $content_color;
+                }
+            }
+
+            @include media-breakpoint-down(sm)
             {
                 background-color: rgba(164,195,105, 0.6);
             }
