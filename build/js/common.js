@@ -120,17 +120,17 @@ $(document).ready(function () {
                     breakpoint: 99999,
                     settings: "unslick"
             },
+            // {
+            //     breakpoint: 992,
+            //     settings: {
+            //         slidesToShow: 1,
+            //         slidesToScroll: 1
+            //     }
+            // },
             {
-                breakpoint: 992,
+                breakpoint: 768,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 500,
-                settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1
                 }
             },
