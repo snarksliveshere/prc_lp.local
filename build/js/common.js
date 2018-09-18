@@ -143,41 +143,43 @@ $(document).ready(function () {
             }
         ]
     });
-    // $('.testimonials__wrap').slick({
-    //     dots: true,
-    //     autoplay: false,
-    //     infinite: true,
-    //     speed: 300,
-    //     arrows: false,
-    //     slidesToShow: 4,
+
+    var reviewMenu = $('.review__menu');
+    reviewMenu.on('init reInit beforeChange edge setPosition afterChange swipe lazyLoaded breakpoint', function (event, slick, currentSlide, nextSlide) {
+        reviewMenu.find('.slick-track').css('transform', 'none');
+    });
+
+    // $('.review__bg-wrap').slick({
+    //     slidesToShow: 1,
     //     slidesToScroll: 1,
-    //     responsive: [
-    //         {
-    //             breakpoint: 99999,
-    //             settings: "unslick"
-    //         },
-    //         {
-    //             breakpoint: 992,
-    //             settings: {
-    //                 slidesToShow: 3,
-    //                 slidesToScroll: 1
-    //             }
-    //         },
-    //         {
-    //             breakpoint: 500,
-    //             settings: {
-    //                 slidesToShow: 2,
-    //                 slidesToScroll: 1
-    //             }
-    //         },
-    //         {
-    //             breakpoint: 360,
-    //             settings: {
-    //                 slidesToShow: 1,
-    //                 slidesToScroll: 1
-    //             }
-    //         }
-    //     ]
+    //     arrows: false,
+    //     fade: true,
+    //     autoplay: true,
+    //     asNavFor: '.review__menu'
     // });
+    // reviewMenu.slick({
+    //     slidesToShow: 7,
+    //     asNavFor: '.review__bg-wrap',
+    //     dots: false,
+    //     swipe: false,
+    //     waitForAnimate: false,
+    //     slidesPerRow: 7,
+    //     infinite: false,
+    //     accessibility: false,
+    //     centerMode: true,
+    //     autoplay: false
+    //
+    //     // focusOnSelect: true
+    // });
+    // $('.review__menu .slick-track').css('transform','none', 'left', 0);
+    
+    $('.sandwitch').click(function () {
+        $('.header__rollup').fadeIn();
+    });
+    $('.close_header_mobile-menu').click(function () {
+        $('.header__rollup').fadeOut('fast');
+    });
+
 
 });
+
