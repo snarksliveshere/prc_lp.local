@@ -1,7 +1,86 @@
 .tostart
 {
+
+    &__wrap
+    {
+        background-image: url(#{$images}bg/bg_tostart-ship.jpg), url(#{$images}bg/bg_tostart-auto.jpg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top left, bottom right;
+        background-size: contain, contain;
+        padding:300px 0;
+        @include media-breakpoint-up(md)
+        {
+            background-position: center left, center right;
+            padding: 0;
+        }
+        @include media-breakpoint-between(md,lg)
+        {
+            background-image: none;
+        }
+    }
+
     &__item
     {
+        border:5px solid $main2_color;
+        border-bottom: none;
+        position: relative;
+
+        @include media-breakpoint-down(sm)
+        {
+            &:first-child
+            {
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 50%;
+                    height: 5px;
+                    background-color: #fff;
+                    left: 0;
+                    top: -5px;
+                    z-index: 3;
+                }
+            }
+            &:nth-child(2)
+            {
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 50%;
+                    height: 5px;
+                    background-color: #fff;
+                    right: 0;
+                    bottom: -5px;
+                    z-index: 3;
+                }
+            }
+        }
+
+        &:first-child
+        {
+            border-left: none;
+        }
+        &:nth-child(2)
+        {
+            border-right: none;
+            border-bottom: 5px solid $main2_color;
+
+            @include media-breakpoint-up(md)
+            {
+                border-bottom: none;
+            }
+        }
+        &:last-child
+        {
+            border:none;
+        }
+
+        @include media-breakpoint-up(md)
+        {
+            border:none;
+        }
+
         &-num
         {
             &-value {
@@ -10,6 +89,14 @@
                 border-radius:50%;
                 padding: 10px 39px;
                 background-color: #fff;
+                position: relative;
+                top: -56px;
+                z-index: 3;
+                @include media-breakpoint-up(md)
+                {
+                    top: 0;
+                }
+
             }
         }
 
@@ -28,7 +115,23 @@
 
     &__numblock {
         position: relative;
-        top: -60px;
+        margin-top: 100px;
+
+        @include media-breakpoint-up(md)
+        {
+            top: -60px;
+            margin-top: 0;
+        }
+
     }
 
 }
+
+//.multi_bg_example {
+//    width: 100%;
+//    height: 400px;
+//    background-image: url(https://mdn.mozillademos.org/files/11305/firefox.png), url(https://mdn.mozillademos.org/files/11307/bubbles.png), linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+//    background-repeat: no-repeat, no-repeat, no-repeat;
+//    background-position: bottom right, left, right;
+//    background: -moz-linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), -webkit-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), -ms-linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+//}
