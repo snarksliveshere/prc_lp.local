@@ -5,7 +5,7 @@
         & > div
         {
             // переопределяю последний пункт
-            @include media-breakpoint-down(md)
+            @include media-breakpoint-down(sm)
             {
                 &:last-child
                 {
@@ -145,7 +145,7 @@
         {
             height: 183px;
             background-repeat: no-repeat;
-            background-position: bottom left;
+            background-position: bottom center;
 
 
             &.bg
